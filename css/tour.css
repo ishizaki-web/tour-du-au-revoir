@@ -1,0 +1,288 @@
+@charset"utf-8";
+.wrap {
+  overflow: hidden;
+}
+header{
+  height: 100vh;
+}
+main{
+  width: 100%;
+}
+header .header-info{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+h1 a img{
+  display: block;
+  width: 700px;
+  padding-top: 1.4em;
+}
+h1 a img:hover{
+  opacity: 0.7;
+}
+
+header h1+a{
+  display: block;
+  transition: 0.1s
+}
+
+header h1+a:hover{
+  transform: scale(1.05)
+}
+header a .scrolldown{
+  width: 7rem;
+  padding: 1em;
+  transform: translateY(60vh)
+}
+#tour{
+  width: 80%;
+  background-color: rgba(0, 182, 155, 0.7);
+  margin: 7em auto 16em;
+  text-align: center;
+  padding: 4em 10em;
+  box-sizing: border-box;
+}
+
+#tour .example{
+  width: 100%;
+  height: 600px;
+  overflow: auto;
+  box-shadow: 0 0 4px rgba(0,0,0,.6) inset;
+  box-sizing: border-box;
+  padding: 1.4em 1em;
+  margin-bottom: 10em;
+  background-color: #4498bc;
+  opacity: 0.8;
+}
+
+h2{
+  color: #fff;
+  margin-bottom: 1em;
+  font-size: 1.5em;
+}
+
+h2 +p {
+  color: #fff;
+  margin-bottom: 4em;
+  font-size: 1em;
+}
+
+h3{
+  color: #fff;
+  margin-bottom: 2em;
+}
+
+#tour .example div{
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  margin-bottom: 4em;
+  width: 99%;
+}
+#tour .example div img{
+  width: 30%;
+  box-sizing: border-box;
+  border: 1px solid white;
+  object-fit: cover;
+}
+#tour .example div section{
+  text-align: justify;
+  width: 70%;
+  box-sizing: border-box;
+  padding-left: 1em;
+  color: white;
+}
+#tour .example div section h4{
+  font-weight: 400;
+  font-size: 1.2em;
+  padding-bottom: 0.4em;
+  margin-bottom: 0.4em;
+  border-bottom: solid 2px #ffe500;
+}
+#tour .example div section p{
+  font-size: 0.9em;
+  line-height: 1.8;
+}
+#tour .option{
+  width: 100%;
+  margin: 0 auto;
+}
+#tour .option h4{
+  color: #fff;
+}
+#tour .option p{
+  color: #fff;
+  margin-bottom: 10em;
+  font-size: 0.87em;
+  line-height: 2;
+}
+#tour .option p:last-child{
+  margin-bottom: 2em;
+  font-size: 1em;
+}
+#tour .option h3{
+  width: 90px;
+  font-size: 1.4em;
+  margin:0 auto 2em;
+  border-bottom: 2px solid #fff;
+  padding-bottom: 0.4em;
+}
+#tour .option h4{
+  margin-bottom: 1.4em;
+}
+#tour a:last-child{
+  color: #fff;
+  font-weight: 700;
+  font-family: 'Monserrat', sans-serif;
+  display: block;
+  width: 170px;
+  margin: 0 auto;
+}
+#tour a:last-child:hover p,
+#tour a:last-child:hover img{
+  opacity: 0.7;
+}
+#tour a:last-child img{
+  width: 130px;
+  transform: translate(16px,-24px)
+}
+/*1024px*/
+@media screen and (max-width:1024px){
+  header a .scrolldown{
+    width: 120px;
+  }
+  #tour{
+    padding: 3em 4em;
+  }
+}
+  
+/*768px*/
+@media screen and (max-width:768px){
+  #tour{
+    padding: 3em 2.5em;
+    width: 90%;
+  }
+  #tour .example{
+    padding: 1em 0;
+  }
+  #tour .example div{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #tour .example div img{
+    width: 80%;
+    margin-bottom: 0.7em;
+  }
+  #tour .example div section{
+    width: 80%;
+    padding-left: 0;
+  }
+  #tour .example div section p{
+    font-size: 1em;
+  }
+  #tour .option{
+    width: 90%;
+  }
+  #tour .option p{
+    font-size: 0.86em;
+    text-align: justify;
+    line-height: 1.7;
+  }
+   #tour .option p:last-child{
+    text-align: center;
+     font-size: 1.1em;
+  }
+}
+  
+/*414px*/
+@media screen and (max-width:414px){
+  header a .scrolldown{
+    width: 80px;
+  }
+  #tour{
+    padding: 3em 1.7em;
+  }
+  #tour h2+p{
+    font-size: 0.76em;
+  }
+   #tour .example{
+    padding: 1em;
+  }
+  #tour .example div img{
+    width: 100%;
+  }
+  #tour .example div section{
+    width: 100%;
+  }
+  #tour .example div section p{
+    font-size: 0.9em;
+  }
+  
+  #tour .option p{
+    font-size: 0.95em;
+  }
+  #tour .option p:last-child{
+    font-size: 0.9em;
+  }
+}
+  
+/*375px*/
+@media screen and (max-width:375px){
+  h2+p{
+    font-size: 0.7em!important;
+  }
+  #tour .example div section h4{
+    font-size: 1em;
+  }
+  #tour .option p:last-child{
+    font-size: 0.88em;
+  }
+}
+  
+/*320px*/
+@media screen and (max-width:320px){
+  #tour{
+    padding: 2em 1em;
+  }
+  #tour h2+p{
+    font-size: 0.64em!important;
+  }
+  #tour .example div section h4{
+    font-size: 0.9em;
+  }
+  #tour .example div section p{
+    font-size: 0.89em;
+  }
+  #tour .option h3{
+    font-size: 1.5em;
+  }
+  #tour .option h4{
+    font-size: 1.3em;
+  }
+  #tour .option p{
+    font-size: 1em;
+  }
+  #tour .option p:last-child{
+    font-size: 0.8em;
+  }
+}
+
+/*inview css*/
+.up{
+  opacity: 0;
+  position: relative;
+}
+.up{
+  bottom: -80px;
+  transition: 3.6s 0.3s;
+}
+
+.upstyle{
+  opacity: 1;
+  /*transition: 1s 0.2s;*/
+}
+.upstyle{
+  bottom: 0;
+}

@@ -1,0 +1,274 @@
+@charset "utf-8";
+body::before{
+  content: "";
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100vh;
+  background-image: url(../images/tour/tour_belgium_brano-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+main{
+  width: 100%;
+}
+
+.wrap {
+  overflow: hidden;
+}
+
+header .header-info{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 a img{
+  display: block;
+  width: 700px;
+  padding-top: 1.4em;
+}
+h1 a img:hover{
+  opacity: 0.7;
+}
+header{
+  height: 100vh;
+  position: relative;
+}
+header h1 +a{
+  display: block;
+  transition: 0.1s
+}
+header h1 +a:hover{
+  transform: scale(1.2)
+}
+header a .scrolldown{
+  color: #fff;
+  width: 7rem;
+  padding: 1em;
+  transform: translateY(60vh)
+}
+#staff{
+  width: 80%;
+  margin: 3em auto 16em;
+  text-align: center;
+  padding: 7em 10em;
+  box-sizing: border-box;
+}
+h2{
+  color: #fff;
+  margin-bottom: 1em;
+  text-shadow: 0 0 2px black,0 0 2px black,0 0 2px black,0 0 2px black,0 0 2px black;
+}
+h2+p{
+  color: #fff;
+  margin-bottom: 4em;
+  font-weight: 600;
+  font-size: 1em;
+  text-shadow: 0 0 2px black,0 0 2px black,0 0 2px black,0 0 2px black,0 0 2px black,0 0 2px black;
+}
+
+.section-box{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.section-box div{
+  width: 28%;
+  margin-bottom: 6em;
+  margin-top: 4em;
+}
+
+.section-box div img{
+  width: 100%;
+  border: 1px solid #fff;
+  box-sizing: border-box;
+  border-radius: 5px 5px 0 0;
+}
+
+
+
+.section-box .staff-text{
+  width: 100%;
+  background-color: #fff;
+  padding: 1em 0.8em;
+  box-sizing: border-box;
+  border-radius: 0 0 5px 5px;
+}
+
+.section-box .staff-text h3{
+  font-size: 1em;
+  margin-bottom: 1em;
+}
+
+.section-box section h3 span{
+  font-size: 0.8em
+}
+
+.section-box section p{
+  font-size: 0.8em;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+  text-align: justify;
+}
+
+.company{
+  width: 100%;
+  margin-top: 3em;
+}
+
+.company h2{
+  font-size: 1.2em;
+  font-weight: 600;
+  margin-bottom: 3em;
+}
+
+.company div{
+  width: 100%;
+  background-color: #fff;
+  padding: 2.5em;
+  box-sizing: border-box;
+}
+.company table{
+  width: 100%;
+  text-align: left;
+  color: #333;
+  border-collapse: collapse;
+  border: 2px solid #4498bc;
+}
+.company th{
+  width: 20%;
+  padding: 1.6em;
+  border: solid 2px #4498bc;
+  text-align: center;
+  box-sizing: border-box;
+  background-color: #fff;
+  color: #333;
+  font-weight: 400;
+}
+.company td{
+  width: 80%;
+  border: 2px solid #4498bc;
+  padding-left: 3em;
+  padding-right: 2em;
+  box-sizing: border-box;
+}
+.company tr:nth-of-type(2) td{
+  padding: 1.5em 0 1.5em 3em;
+  line-height: 2;
+}
+/*1024px*/
+@media screen and (max-width:1024px){
+  header a .scrolldown{
+    width: 120px;
+  }
+  #staff{
+  padding: 3em 4em;
+}
+  h2+p{
+    font-size: 1.2em
+  }
+}
+
+/*768px*/
+@media screen and (max-width:768px){
+  #staff{
+  padding: 3em 2.5em;
+}
+  .section-box div{
+    width: 45%;
+  }
+}
+
+/*414px*/
+@media screen and (max-width:414px){
+  header a .scrolldown{
+    width: 80px;
+  }
+  #staff{
+    padding: 3em 1.7em;
+    width: 90%;
+  }
+  .section-box div{
+    width: 100%;
+    margin-top: 0;
+  }
+  h2+p{
+    font-size: 0.76em
+  }
+  table tr{
+    display: flex;
+    flex-direction: column;
+  }
+  .company th,
+  .company td{
+    width: 100%;
+    border: 1px solid #b1a891;
+  }
+  .company div{
+  padding: 0.7em;
+}
+.company th{
+  padding: 0.6em;
+}
+.company td{
+  text-align: center;
+  padding: 2em;
+  padding-left: 0.3em;
+  padding-right: 0.3em;
+  font-weight: 500;
+  font-size: 0.9em
+}
+.company tr:nth-of-type(2) td{
+  padding-left: 0.3em;
+  padding-right: 0.3em;
+  line-height: 2;
+}
+}
+
+/*375px*/
+@media screen and (max-width:375px){
+  #staff{
+    padding: 3em 1.4em;
+  }
+  h2+p{
+    font-size: 0.73em
+  }
+}
+
+/*320px*/
+@media screen and (max-width:320px){
+  #staff{
+    padding: 2em 1em;
+  }
+  h2{
+    margin-bottom: 0.8em;
+  }
+  h2+p{
+    font-size: 0.64em
+  }
+}
+
+/*inview css*/
+.up{
+  opacity: 0;
+  position: relative;
+}
+.up{
+  bottom: -80px;
+  transition: 1s 0.2s;
+}
+
+.upstyle{
+  opacity: 1;
+  /*transition: 1s 0.2s;*/
+}
+.upstyle{
+  bottom: 0;
+}
